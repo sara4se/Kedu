@@ -7,13 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561964A5290F88CC00D17F91 /* Game2Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964A4290F88CC00D17F91 /* Game2Screen.swift */; };
+		561964D7291266FB00D17F91 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964D6291266FB00D17F91 /* MemoryGame.swift */; };
+		561964DD2912673B00D17F91 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964D92912673B00D17F91 /* GridLayout.swift */; };
+		561964DE2912673B00D17F91 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964DA2912673B00D17F91 /* Cardify.swift */; };
+		561964DF2912673B00D17F91 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964DB2912673B00D17F91 /* Pie.swift */; };
+		561964E02912673B00D17F91 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964DC2912673B00D17F91 /* Grid.swift */; };
+		561964E72912675700D17F91 /* String+ToArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964E22912675700D17F91 /* String+ToArray.swift */; };
+		561964E82912675700D17F91 /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964E32912675700D17F91 /* Array+Identifiable.swift */; };
+		561964E92912675700D17F91 /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964E42912675700D17F91 /* Array+Only.swift */; };
+		561964EA2912675700D17F91 /* Int+RandomExcludingSome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964E52912675700D17F91 /* Int+RandomExcludingSome.swift */; };
+		561964EB2912675700D17F91 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964E62912675700D17F91 /* UIColor+RGBA.swift */; };
+		561964EE2912675D00D17F91 /* DefaultThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964ED2912675D00D17F91 /* DefaultThemes.swift */; };
+		561964F02912678D00D17F91 /* ThemeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964EF2912678D00D17F91 /* ThemeCollection.swift */; };
+		561964F629126CE300D17F91 /* EmojiMemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964F429126CE300D17F91 /* EmojiMemoryGameViewModel.swift */; };
+		561964F729126CE300D17F91 /* ThemeCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964F529126CE300D17F91 /* ThemeCollectionManager.swift */; };
 		567A3FE729098A2B005DA2F9 /* KeduApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A3FE629098A2B005DA2F9 /* KeduApp.swift */; };
-		567A3FE929098A2B005DA2F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A3FE829098A2B005DA2F9 /* ContentView.swift */; };
 		567A3FEB29098A2C005DA2F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567A3FEA29098A2C005DA2F9 /* Assets.xcassets */; };
-		567A3FEE29098A2C005DA2F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567A3FED29098A2C005DA2F9 /* Preview Assets.xcassets */; };
 		567A3FF829098A2C005DA2F9 /* KeduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A3FF729098A2C005DA2F9 /* KeduTests.swift */; };
 		567A400229098A2C005DA2F9 /* KeduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A400129098A2C005DA2F9 /* KeduUITests.swift */; };
 		567A400429098A2C005DA2F9 /* KeduUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A400329098A2C005DA2F9 /* KeduUITestsLaunchTests.swift */; };
+		56B488D9290BD83900E463CB /* AnnieUseYourTelescope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56B488D8290BD81600E463CB /* AnnieUseYourTelescope-Regular.ttf */; };
+		56B488DF290C18FA00E463CB /* LogoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B488DE290C18FA00E463CB /* LogoScreen.swift */; };
+		56ED080A2912D9C4006176D6 /* Game2Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED08092912D9C4006176D6 /* Game2Screen2.swift */; };
+		56ED080C2912D9E5006176D6 /* Game1Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED080B2912D9E5006176D6 /* Game1Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +51,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		561964A4290F88CC00D17F91 /* Game2Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2Screen.swift; sourceTree = "<group>"; };
+		561964D6291266FB00D17F91 /* MemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		561964D92912673B00D17F91 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		561964DA2912673B00D17F91 /* Cardify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
+		561964DB2912673B00D17F91 /* Pie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		561964DC2912673B00D17F91 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		561964E22912675700D17F91 /* String+ToArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ToArray.swift"; sourceTree = "<group>"; };
+		561964E32912675700D17F91 /* Array+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
+		561964E42912675700D17F91 /* Array+Only.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
+		561964E52912675700D17F91 /* Int+RandomExcludingSome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+RandomExcludingSome.swift"; sourceTree = "<group>"; };
+		561964E62912675700D17F91 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
+		561964ED2912675D00D17F91 /* DefaultThemes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultThemes.swift; sourceTree = "<group>"; };
+		561964EF2912678D00D17F91 /* ThemeCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCollection.swift; sourceTree = "<group>"; };
+		561964F429126CE300D17F91 /* EmojiMemoryGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameViewModel.swift; sourceTree = "<group>"; };
+		561964F529126CE300D17F91 /* ThemeCollectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCollectionManager.swift; sourceTree = "<group>"; };
 		567A3FE329098A2B005DA2F9 /* Kedu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kedu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		567A3FE629098A2B005DA2F9 /* KeduApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeduApp.swift; sourceTree = "<group>"; };
-		567A3FE829098A2B005DA2F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		567A3FEA29098A2C005DA2F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		567A3FED29098A2C005DA2F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		567A3FF329098A2C005DA2F9 /* KeduTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeduTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		567A3FF729098A2C005DA2F9 /* KeduTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeduTests.swift; sourceTree = "<group>"; };
 		567A3FFD29098A2C005DA2F9 /* KeduUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeduUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		567A400129098A2C005DA2F9 /* KeduUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeduUITests.swift; sourceTree = "<group>"; };
 		567A400329098A2C005DA2F9 /* KeduUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeduUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56B488D8290BD81600E463CB /* AnnieUseYourTelescope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AnnieUseYourTelescope-Regular.ttf"; sourceTree = "<group>"; };
+		56B488DB290BDB6000E463CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		56B488DE290C18FA00E463CB /* LogoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoScreen.swift; sourceTree = "<group>"; };
+		56ED08092912D9C4006176D6 /* Game2Screen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2Screen2.swift; sourceTree = "<group>"; };
+		56ED080B2912D9E5006176D6 /* Game1Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game1Screen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +106,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		561964CA29110F1400D17F91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				561964D6291266FB00D17F91 /* MemoryGame.swift */,
+				561964EF2912678D00D17F91 /* ThemeCollection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		561964D329119E2900D17F91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56B488DE290C18FA00E463CB /* LogoScreen.swift */,
+				56ED080B2912D9E5006176D6 /* Game1Screen.swift */,
+				561964A4290F88CC00D17F91 /* Game2Screen.swift */,
+				56ED08092912D9C4006176D6 /* Game2Screen2.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		561964D82912673B00D17F91 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				561964D92912673B00D17F91 /* GridLayout.swift */,
+				561964DA2912673B00D17F91 /* Cardify.swift */,
+				561964DB2912673B00D17F91 /* Pie.swift */,
+				561964DC2912673B00D17F91 /* Grid.swift */,
+				561964E12912675700D17F91 /* Extensions */,
+				561964EC2912675D00D17F91 /* DefaultThemes */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		561964E12912675700D17F91 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				561964E22912675700D17F91 /* String+ToArray.swift */,
+				561964E32912675700D17F91 /* Array+Identifiable.swift */,
+				561964E42912675700D17F91 /* Array+Only.swift */,
+				561964E52912675700D17F91 /* Int+RandomExcludingSome.swift */,
+				561964E62912675700D17F91 /* UIColor+RGBA.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		561964EC2912675D00D17F91 /* DefaultThemes */ = {
+			isa = PBXGroup;
+			children = (
+				561964ED2912675D00D17F91 /* DefaultThemes.swift */,
+			);
+			path = DefaultThemes;
+			sourceTree = "<group>";
+		};
+		561964F329126CE300D17F91 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				561964F429126CE300D17F91 /* EmojiMemoryGameViewModel.swift */,
+				561964F529126CE300D17F91 /* ThemeCollectionManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		567A3FDA29098A2A005DA2F9 = {
 			isa = PBXGroup;
 			children = (
@@ -95,19 +192,15 @@
 			isa = PBXGroup;
 			children = (
 				567A3FE629098A2B005DA2F9 /* KeduApp.swift */,
-				567A3FE829098A2B005DA2F9 /* ContentView.swift */,
+				561964D329119E2900D17F91 /* View */,
+				561964CA29110F1400D17F91 /* Model */,
+				561964F329126CE300D17F91 /* ViewModels */,
+				561964D82912673B00D17F91 /* Structs */,
+				56B488DA290BD95400E463CB /* Font */,
 				567A3FEA29098A2C005DA2F9 /* Assets.xcassets */,
-				567A3FEC29098A2C005DA2F9 /* Preview Content */,
+				56B488DB290BDB6000E463CB /* Info.plist */,
 			);
 			path = Kedu;
-			sourceTree = "<group>";
-		};
-		567A3FEC29098A2C005DA2F9 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				567A3FED29098A2C005DA2F9 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		567A3FF629098A2C005DA2F9 /* KeduTests */ = {
@@ -125,6 +218,14 @@
 				567A400329098A2C005DA2F9 /* KeduUITestsLaunchTests.swift */,
 			);
 			path = KeduUITests;
+			sourceTree = "<group>";
+		};
+		56B488DA290BD95400E463CB /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				56B488D8290BD81600E463CB /* AnnieUseYourTelescope-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				567A3FEE29098A2C005DA2F9 /* Preview Assets.xcassets in Resources */,
+				56B488D9290BD83900E463CB /* AnnieUseYourTelescope-Regular.ttf in Resources */,
 				567A3FEB29098A2C005DA2F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +358,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				567A3FE929098A2B005DA2F9 /* ContentView.swift in Sources */,
+				561964F629126CE300D17F91 /* EmojiMemoryGameViewModel.swift in Sources */,
+				561964E72912675700D17F91 /* String+ToArray.swift in Sources */,
+				561964F02912678D00D17F91 /* ThemeCollection.swift in Sources */,
+				561964E92912675700D17F91 /* Array+Only.swift in Sources */,
+				561964EA2912675700D17F91 /* Int+RandomExcludingSome.swift in Sources */,
+				561964D7291266FB00D17F91 /* MemoryGame.swift in Sources */,
+				56B488DF290C18FA00E463CB /* LogoScreen.swift in Sources */,
+				56ED080C2912D9E5006176D6 /* Game1Screen.swift in Sources */,
+				561964F729126CE300D17F91 /* ThemeCollectionManager.swift in Sources */,
+				561964E02912673B00D17F91 /* Grid.swift in Sources */,
+				56ED080A2912D9C4006176D6 /* Game2Screen2.swift in Sources */,
+				561964EE2912675D00D17F91 /* DefaultThemes.swift in Sources */,
+				561964DE2912673B00D17F91 /* Cardify.swift in Sources */,
+				561964EB2912675700D17F91 /* UIColor+RGBA.swift in Sources */,
 				567A3FE729098A2B005DA2F9 /* KeduApp.swift in Sources */,
+				561964A5290F88CC00D17F91 /* Game2Screen.swift in Sources */,
+				561964DF2912673B00D17F91 /* Pie.swift in Sources */,
+				561964E82912675700D17F91 /* Array+Identifiable.swift in Sources */,
+				561964DD2912673B00D17F91 /* GridLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,11 +537,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Kedu/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kedu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,11 +568,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Kedu/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kedu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
