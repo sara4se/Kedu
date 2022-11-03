@@ -37,7 +37,7 @@ struct Game2Screen2: View {
                 
                 VStack(alignment:.center){
                     Text("Free Time")
-                        .font(Font.custom("AnnieUseYourTelescope-Regular", size:60)).foregroundColor(.gray).bold()
+                        .font(Font.custom("AnnieUseYourTelescope-Regular", size:61)).foregroundColor(.gray).bold()
     //                first rectangl
                     ZStack{
                         Rectangle().frame(width: UIScreen.main.bounds.width * 0.4 ,height: UIScreen.main.bounds.width * 0.2 ).cornerRadius(30).foregroundColor(.white)
