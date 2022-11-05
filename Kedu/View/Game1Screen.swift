@@ -17,109 +17,126 @@ extension Color {
 struct Game1Screen: View {
     @ObservedObject var viewModel: EmojiMemoryGameViewModel
     @State private var isShowingView = false
+    @State private var isNext = false
     var body: some View {
-        NavigationStack {
-            
+
         ZStack{
+            
             Image("Image").resizable().scaledToFill().ignoresSafeArea(.all)
-            VStack{
-                Text("Memory Match").font(Font.custom("AnnieUseYourTelescope-Regular", size: 60)).bold().foregroundColor(.gray)
+            
+          
                 HStack{
-                    
-                    VStack(content:
-                            {
+                    Button(action: {
+                        isNext.toggle()
+                    }){
+                        Image("back")
+                            .resizable()
+                            .frame(width: 90 , height: 90)
+                            .rotationEffect(.degrees(0))
                         
-                        Grid(items: viewModel.cards) { card in
-                            cardView(card: card).onTapGesture {
-                                withAnimation(.easeInOut(duration: 0.5)) {
-                                    viewModel.choose(card: card)
+                    }
+                    Spacer()
+                    Text("Memory Match").font(Font.custom("AnnieUseYourTelescope-Regular", size: 60)).bold().foregroundColor(.gray)
+                    
+                }.frame(width: UIScreen.main.bounds.width * 0.6, height: UIScreen.main.bounds.height * 0.2).offset(CGSize.init(width: -240, height: -380))
+                
+                
+                VStack{
+                    
+                    HStack(alignment: .bottom){
+                        
+                        VStack(content:
+                                {
+                            
+                            Grid(items: viewModel.cards) { card in
+                                cardView(card: card).onTapGesture {
+                                    withAnimation(.easeInOut(duration: 0.5)) {
+                                        viewModel.choose(card: card)
+                                    }
+                                }.padding(4)
+                            }
+                            .foregroundColor(Color(viewModel.theme.accentColor))
+                            
+                        }).frame(width: UIScreen.main.bounds.width * 0.6 ,height: UIScreen.main.bounds.height * 0.6).padding(.all , 10)
+                        HStack(alignment: .bottom,content: {
+                            Rectangle().frame(width: UIScreen.main.bounds.width * 0.3 ,height: UIScreen.main.bounds.height * 0.7 ).cornerRadius(30).foregroundColor(.yellow1)
+                                .overlay{
+                                    VStack(alignment: .center, spacing : 0){
+                                        
+                                        Button(action: {
+                                            print("button animale")
+                                            
+                                        })
+                                        {
+                                            
+                                            Rectangle().frame(width: UIScreen.main.bounds.width * 0.25 ,height: UIScreen.main.bounds.height * 0.15).cornerRadius(8).foregroundColor(.white).padding(.top , 80)
+                                                .overlay{
+                                                    Rectangle().frame(width: UIScreen.main.bounds.width * 0.15 ,height: UIScreen.main.bounds.height * 0.15).cornerRadius(8).foregroundColor(.white)
+                                                        .overlay (alignment: .top) { Text("Animals").font(Font.custom("AnnieUseYourTelescope-Regular", size: 40)).bold().foregroundColor(.black)
+                                                            
+                                                        }
+                                                    
+                                                    Image("animalBt").resizable().frame(width: UIScreen.main.bounds.width * 0.1 ,height: UIScreen.main.bounds.height * 0.15).padding(.top,80)
+                                                }
+                                            
+                                        }
+                                        Button(action: {
+                                            print("button pressed")
+                                        })
+                                        {
+                                            Rectangle().frame(width: UIScreen.main.bounds.width * 0.25 ,height: UIScreen.main.bounds.height * 0.15).cornerRadius(8).foregroundColor(.white).padding(.top , 80)
+                                                .overlay{
+                                                    Rectangle().frame(width: UIScreen.main.bounds.width * 0.15 ,height: UIScreen.main.bounds.height * 0.15).cornerRadius(8).foregroundColor(.white)
+                                                        .overlay (alignment: .top) { Text("Objects").font(Font.custom("AnnieUseYourTelescope-Regular", size: 40)).bold().foregroundColor(.black)
+                                                        }
+                                                    Image("objectBt").resizable().frame(width: UIScreen.main.bounds.width * 0.15 ,height: UIScreen.main.bounds.height * 0.15).padding(.top,80)
+                                                }
+                                            
+                                        }
+                                        Button(action: {
+                                            print("button pressed")
+                                        })
+                                        {
+                                            
+                                            Rectangle().frame(width: UIScreen.main.bounds.width * 0.25 ,height: UIScreen.main.bounds.height * 0.15).cornerRadius(8).foregroundColor(.white).padding(.top , 80)
+                                                .overlay{
+                                                    Rectangle().frame(width: UIScreen.main.bounds.width * 0.15 ,height: UIScreen.main.bounds.height * 0.15).cornerRadius(8).foregroundColor(.white)
+                                                        .overlay (alignment: .top) { Text("Food").font(Font.custom("AnnieUseYourTelescope-Regular", size: 40)).bold().foregroundColor(.black)
+                                                        }
+                                                    Image("foodBt").resizable().frame(width: UIScreen.main.bounds.width * 0.1 ,height: UIScreen.main.bounds.height * 0.15).padding(.top,80)
+                                                }
+                                            
+                                        }
+                                    }
                                 }
-                            }.padding(4)
+                            
+                        })
+                        
+                    }
+                    Button(action:{
+                        withAnimation(.easeInOut) {
+                            viewModel.resetGame()
                         }
-                        .foregroundColor(Color(viewModel.theme.accentColor))
-                        
-                    }).frame(width: UIScreen.main.bounds.width * 0.6 ,height: UIScreen.main.bounds.height * 0.6).padding(.all , 10)
-                    HStack(content: {
-                        Rectangle().frame(width: UIScreen.main.bounds.width * 0.3 ,height: UIScreen.main.bounds.height * 0.5 ).cornerRadius(30).foregroundColor(.yellow1)
-                            .overlay{
-                                VStack(alignment: .center, spacing : 0){
-                                    
-                                    Button(action: {
-                                        print("button pressed")
-                                    })
-                                    {
-                                        
-                                        Rectangle().frame(width: UIScreen.main.bounds.width * 0.2 ,height: UIScreen.main.bounds.height * 0.1).cornerRadius(8).foregroundColor(.white).padding(.top , 80)
-                                            .overlay{
-                                                Rectangle().frame(width: UIScreen.main.bounds.width * 0.1 ,height: UIScreen.main.bounds.height * 0.1).cornerRadius(8).foregroundColor(.white)
-                                                    .overlay (alignment: .top) { Text("Animals").font(Font.custom("AnnieUseYourTelescope-Regular", size: 36)).bold().foregroundColor(.black)
-                                                        
-                                                    }
-                                                
-                                                Image("animalBt").resizable().frame(width: UIScreen.main.bounds.width * 0.1 ,height: UIScreen.main.bounds.height * 0.1).padding(.top,80)
-                                            }
-                                        
-                                    }
-                                    Button(action: {
-                                        print("button pressed")
-                                    })
-                                    {
-                                        Rectangle().frame(width: UIScreen.main.bounds.width * 0.2 ,height: UIScreen.main.bounds.height * 0.1).cornerRadius(8).foregroundColor(.white).padding(.top , 80)
-                                            .overlay{
-                                                Rectangle().frame(width: UIScreen.main.bounds.width * 0.1 ,height: UIScreen.main.bounds.height * 0.1).cornerRadius(8).foregroundColor(.white)
-                                                    .overlay (alignment: .top) { Text("Objects").font(Font.custom("AnnieUseYourTelescope-Regular", size: 36)).bold().foregroundColor(.black)
-                                                    }
-                                                Image("objectBt").resizable().frame(width: UIScreen.main.bounds.width * 0.1 ,height: UIScreen.main.bounds.height * 0.1).padding(.top,80)
-                                            }
-                                        
-                                    }
-                                    Button(action: {
-                                        print("button pressed")
-                                    })
-                                    {
-                                        
-                                        Rectangle().frame(width: UIScreen.main.bounds.width * 0.2 ,height: UIScreen.main.bounds.height * 0.1).cornerRadius(8).foregroundColor(.white).padding(.top , 80)
-                                            .overlay{
-                                                Rectangle().frame(width: UIScreen.main.bounds.width * 0.1 ,height: UIScreen.main.bounds.height * 0.1).cornerRadius(8).foregroundColor(.white)
-                                                    .overlay (alignment: .top) { Text("Food").font(Font.custom("AnnieUseYourTelescope-Regular", size: 36)).bold().foregroundColor(.black)
-                                                    }
-                                                Image("foodBt").resizable().frame(width: UIScreen.main.bounds.width * 0.1 ,height: UIScreen.main.bounds.height * 0.1).padding(.top,80)
-                                            }
-                                        
-                                    }
-                                }.padding(.bottom,80)
-                            }.padding(.trailing, 30)
-                        
+                    }, label: {
+                        ZStack (alignment : .center){
+                            Image("OkButton")
+                                .resizable()
+                                .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.height * 0.1)
+                            Text("Again")
+                                .foregroundColor(.white)
+                                .font(.system(size: 48))
+                                .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.height * 0.1)
+                        }
                     })
-                    
-                }
-                Button(action: {
-                    withAnimation(.easeInOut) {
-                        viewModel.resetGame()
-                    }
-                }, label: {
-                    Image("rect").resizable().frame(width: UIScreen.main.bounds.width * 0.2 ,height: UIScreen.main.bounds.height * 0.1).overlay{
-                        Text("Play again").font(Font.custom("AnnieUseYourTelescope-Regular", size: 60)).foregroundColor(.red).bold()
-                    }
-                })
+                
+                
+                }.padding(.top,140)
+            if isNext{
+                ChooseActivityGame()
+            
             }
         }
-        .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading:
-                                Button(action: {
-            self.isShowingView.toggle()
-            print("hello")
-        }){
-            Image("BackBt")
-                .frame(width: 100 , height: 100)
-                .shadow(radius : 2 , x : 5 , y :0)
-        }
-        )
-        .navigationDestination(isPresented: $isShowingView, destination: {
-            Game2Screen()
-        })
-        
-    }.navigationViewStyle(.stack)
+ 
     }
 }
 

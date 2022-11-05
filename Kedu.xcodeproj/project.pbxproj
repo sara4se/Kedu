@@ -17,18 +17,35 @@
 		561964E82912675700D17F91 /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964E32912675700D17F91 /* Array+Identifiable.swift */; };
 		561964E92912675700D17F91 /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964E42912675700D17F91 /* Array+Only.swift */; };
 		561964EA2912675700D17F91 /* Int+RandomExcludingSome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964E52912675700D17F91 /* Int+RandomExcludingSome.swift */; };
-		561964EB2912675700D17F91 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964E62912675700D17F91 /* UIColor+RGBA.swift */; };
 		561964EE2912675D00D17F91 /* DefaultThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964ED2912675D00D17F91 /* DefaultThemes.swift */; };
 		561964F02912678D00D17F91 /* ThemeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964EF2912678D00D17F91 /* ThemeCollection.swift */; };
 		561964F629126CE300D17F91 /* EmojiMemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964F429126CE300D17F91 /* EmojiMemoryGameViewModel.swift */; };
 		561964F729126CE300D17F91 /* ThemeCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561964F529126CE300D17F91 /* ThemeCollectionManager.swift */; };
+		561C003829151E32003720E5 /* watchStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C003729151E32003720E5 /* watchStory.swift */; };
+		561C003A29151E4C003720E5 /* StoryTitlePage_letsBeFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C003929151E4C003720E5 /* StoryTitlePage_letsBeFriends.swift */; };
+		561C003D29151E98003720E5 /* letsBeFriends_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C003C29151E98003720E5 /* letsBeFriends_1.swift */; };
+		561C003F29151F41003720E5 /* letsBeFriends_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C003E29151F41003720E5 /* letsBeFriends_2.swift */; };
+		561C004129151F61003720E5 /* letsBeFriends_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C004029151F61003720E5 /* letsBeFriends_3.swift */; };
+		561C004329151FFD003720E5 /* letsBeFriends_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C004229151FFD003720E5 /* letsBeFriends_4.swift */; };
+		561C004529152017003720E5 /* letsBeFriends_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C004429152017003720E5 /* letsBeFriends_5.swift */; };
+		561C004729152031003720E5 /* letsBeFriends_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C004629152031003720E5 /* letsBeFriends_6.swift */; };
+		561C00492915221D003720E5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C00482915221D003720E5 /* MainView.swift */; };
+		561C004B29152249003720E5 /* RegestrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C004A29152249003720E5 /* RegestrationView.swift */; };
+		561DF6BD2913B62E007EF9B4 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF6BC2913B62E007EF9B4 /* UIColor+RGBA.swift */; };
+		561DF6BF2913B8EC007EF9B4 /* ChooseStoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF6BE2913B8EC007EF9B4 /* ChooseStoryScreen.swift */; };
+		561DF6C12913B9E4007EF9B4 /* CardSwap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF6C02913B9E4007EF9B4 /* CardSwap.swift */; };
 		567A3FE729098A2B005DA2F9 /* KeduApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A3FE629098A2B005DA2F9 /* KeduApp.swift */; };
 		567A3FEB29098A2C005DA2F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567A3FEA29098A2C005DA2F9 /* Assets.xcassets */; };
 		567A3FF829098A2C005DA2F9 /* KeduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A3FF729098A2C005DA2F9 /* KeduTests.swift */; };
 		567A400229098A2C005DA2F9 /* KeduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A400129098A2C005DA2F9 /* KeduUITests.swift */; };
 		567A400429098A2C005DA2F9 /* KeduUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A400329098A2C005DA2F9 /* KeduUITestsLaunchTests.swift */; };
+		56B43D922915666D0087BAC9 /* ChooseActivityGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B43D912915666D0087BAC9 /* ChooseActivityGame.swift */; };
+		56B43D94291566990087BAC9 /* MakeDecisionGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B43D93291566990087BAC9 /* MakeDecisionGame.swift */; };
 		56B488D9290BD83900E463CB /* AnnieUseYourTelescope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56B488D8290BD81600E463CB /* AnnieUseYourTelescope-Regular.ttf */; };
 		56B488DF290C18FA00E463CB /* LogoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B488DE290C18FA00E463CB /* LogoScreen.swift */; };
+		56C51BD929158EEA003435D9 /* About_us.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C51BD829158EEA003435D9 /* About_us.swift */; };
+		56C51BDB291592B0003435D9 /* KeduSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C51BDA291592B0003435D9 /* KeduSettings.swift */; };
+		56C51BDD291596CE003435D9 /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C51BDC291596CE003435D9 /* Achievements.swift */; };
 		56ED080A2912D9C4006176D6 /* Game2Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED08092912D9C4006176D6 /* Game2Screen2.swift */; };
 		56ED080C2912D9E5006176D6 /* Game1Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED080B2912D9E5006176D6 /* Game1Screen.swift */; };
 /* End PBXBuildFile section */
@@ -61,11 +78,23 @@
 		561964E32912675700D17F91 /* Array+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 		561964E42912675700D17F91 /* Array+Only.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
 		561964E52912675700D17F91 /* Int+RandomExcludingSome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+RandomExcludingSome.swift"; sourceTree = "<group>"; };
-		561964E62912675700D17F91 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
 		561964ED2912675D00D17F91 /* DefaultThemes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultThemes.swift; sourceTree = "<group>"; };
 		561964EF2912678D00D17F91 /* ThemeCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCollection.swift; sourceTree = "<group>"; };
 		561964F429126CE300D17F91 /* EmojiMemoryGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameViewModel.swift; sourceTree = "<group>"; };
 		561964F529126CE300D17F91 /* ThemeCollectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCollectionManager.swift; sourceTree = "<group>"; };
+		561C003729151E32003720E5 /* watchStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchStory.swift; sourceTree = "<group>"; };
+		561C003929151E4C003720E5 /* StoryTitlePage_letsBeFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTitlePage_letsBeFriends.swift; sourceTree = "<group>"; };
+		561C003C29151E98003720E5 /* letsBeFriends_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letsBeFriends_1.swift; sourceTree = "<group>"; };
+		561C003E29151F41003720E5 /* letsBeFriends_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letsBeFriends_2.swift; sourceTree = "<group>"; };
+		561C004029151F61003720E5 /* letsBeFriends_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letsBeFriends_3.swift; sourceTree = "<group>"; };
+		561C004229151FFD003720E5 /* letsBeFriends_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letsBeFriends_4.swift; sourceTree = "<group>"; };
+		561C004429152017003720E5 /* letsBeFriends_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letsBeFriends_5.swift; sourceTree = "<group>"; };
+		561C004629152031003720E5 /* letsBeFriends_6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letsBeFriends_6.swift; sourceTree = "<group>"; };
+		561C00482915221D003720E5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		561C004A29152249003720E5 /* RegestrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegestrationView.swift; sourceTree = "<group>"; };
+		561DF6BC2913B62E007EF9B4 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
+		561DF6BE2913B8EC007EF9B4 /* ChooseStoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseStoryScreen.swift; sourceTree = "<group>"; };
+		561DF6C02913B9E4007EF9B4 /* CardSwap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwap.swift; sourceTree = "<group>"; };
 		567A3FE329098A2B005DA2F9 /* Kedu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kedu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		567A3FE629098A2B005DA2F9 /* KeduApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeduApp.swift; sourceTree = "<group>"; };
 		567A3FEA29098A2C005DA2F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,9 +103,14 @@
 		567A3FFD29098A2C005DA2F9 /* KeduUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeduUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		567A400129098A2C005DA2F9 /* KeduUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeduUITests.swift; sourceTree = "<group>"; };
 		567A400329098A2C005DA2F9 /* KeduUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeduUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56B43D912915666D0087BAC9 /* ChooseActivityGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseActivityGame.swift; sourceTree = "<group>"; };
+		56B43D93291566990087BAC9 /* MakeDecisionGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDecisionGame.swift; sourceTree = "<group>"; };
 		56B488D8290BD81600E463CB /* AnnieUseYourTelescope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AnnieUseYourTelescope-Regular.ttf"; sourceTree = "<group>"; };
 		56B488DB290BDB6000E463CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		56B488DE290C18FA00E463CB /* LogoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoScreen.swift; sourceTree = "<group>"; };
+		56C51BD829158EEA003435D9 /* About_us.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_us.swift; sourceTree = "<group>"; };
+		56C51BDA291592B0003435D9 /* KeduSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeduSettings.swift; sourceTree = "<group>"; };
+		56C51BDC291596CE003435D9 /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
 		56ED08092912D9C4006176D6 /* Game2Screen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2Screen2.swift; sourceTree = "<group>"; };
 		56ED080B2912D9E5006176D6 /* Game1Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game1Screen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,10 +152,22 @@
 		561964D329119E2900D17F91 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				561C003B29151E85003720E5 /* story */,
 				56B488DE290C18FA00E463CB /* LogoScreen.swift */,
 				56ED080B2912D9E5006176D6 /* Game1Screen.swift */,
 				561964A4290F88CC00D17F91 /* Game2Screen.swift */,
 				56ED08092912D9C4006176D6 /* Game2Screen2.swift */,
+				561DF6BE2913B8EC007EF9B4 /* ChooseStoryScreen.swift */,
+				561DF6C02913B9E4007EF9B4 /* CardSwap.swift */,
+				561C003729151E32003720E5 /* watchStory.swift */,
+				561C003929151E4C003720E5 /* StoryTitlePage_letsBeFriends.swift */,
+				561C00482915221D003720E5 /* MainView.swift */,
+				561C004A29152249003720E5 /* RegestrationView.swift */,
+				56B43D912915666D0087BAC9 /* ChooseActivityGame.swift */,
+				56B43D93291566990087BAC9 /* MakeDecisionGame.swift */,
+				56C51BD829158EEA003435D9 /* About_us.swift */,
+				56C51BDA291592B0003435D9 /* KeduSettings.swift */,
+				56C51BDC291596CE003435D9 /* Achievements.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,7 +192,7 @@
 				561964E32912675700D17F91 /* Array+Identifiable.swift */,
 				561964E42912675700D17F91 /* Array+Only.swift */,
 				561964E52912675700D17F91 /* Int+RandomExcludingSome.swift */,
-				561964E62912675700D17F91 /* UIColor+RGBA.swift */,
+				561DF6BC2913B62E007EF9B4 /* UIColor+RGBA.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -166,6 +212,19 @@
 				561964F529126CE300D17F91 /* ThemeCollectionManager.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		561C003B29151E85003720E5 /* story */ = {
+			isa = PBXGroup;
+			children = (
+				561C003C29151E98003720E5 /* letsBeFriends_1.swift */,
+				561C003E29151F41003720E5 /* letsBeFriends_2.swift */,
+				561C004029151F61003720E5 /* letsBeFriends_3.swift */,
+				561C004229151FFD003720E5 /* letsBeFriends_4.swift */,
+				561C004429152017003720E5 /* letsBeFriends_5.swift */,
+				561C004629152031003720E5 /* letsBeFriends_6.swift */,
+			);
+			path = story;
 			sourceTree = "<group>";
 		};
 		567A3FDA29098A2A005DA2F9 = {
@@ -359,24 +418,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				561964F629126CE300D17F91 /* EmojiMemoryGameViewModel.swift in Sources */,
+				56C51BDD291596CE003435D9 /* Achievements.swift in Sources */,
+				561C003A29151E4C003720E5 /* StoryTitlePage_letsBeFriends.swift in Sources */,
+				56C51BD929158EEA003435D9 /* About_us.swift in Sources */,
+				561C004529152017003720E5 /* letsBeFriends_5.swift in Sources */,
 				561964E72912675700D17F91 /* String+ToArray.swift in Sources */,
 				561964F02912678D00D17F91 /* ThemeCollection.swift in Sources */,
 				561964E92912675700D17F91 /* Array+Only.swift in Sources */,
 				561964EA2912675700D17F91 /* Int+RandomExcludingSome.swift in Sources */,
 				561964D7291266FB00D17F91 /* MemoryGame.swift in Sources */,
+				561C004B29152249003720E5 /* RegestrationView.swift in Sources */,
+				561C004329151FFD003720E5 /* letsBeFriends_4.swift in Sources */,
 				56B488DF290C18FA00E463CB /* LogoScreen.swift in Sources */,
 				56ED080C2912D9E5006176D6 /* Game1Screen.swift in Sources */,
 				561964F729126CE300D17F91 /* ThemeCollectionManager.swift in Sources */,
 				561964E02912673B00D17F91 /* Grid.swift in Sources */,
+				561C00492915221D003720E5 /* MainView.swift in Sources */,
 				56ED080A2912D9C4006176D6 /* Game2Screen2.swift in Sources */,
+				561DF6BD2913B62E007EF9B4 /* UIColor+RGBA.swift in Sources */,
+				561C004729152031003720E5 /* letsBeFriends_6.swift in Sources */,
+				561DF6BF2913B8EC007EF9B4 /* ChooseStoryScreen.swift in Sources */,
 				561964EE2912675D00D17F91 /* DefaultThemes.swift in Sources */,
 				561964DE2912673B00D17F91 /* Cardify.swift in Sources */,
-				561964EB2912675700D17F91 /* UIColor+RGBA.swift in Sources */,
 				567A3FE729098A2B005DA2F9 /* KeduApp.swift in Sources */,
 				561964A5290F88CC00D17F91 /* Game2Screen.swift in Sources */,
+				561C003D29151E98003720E5 /* letsBeFriends_1.swift in Sources */,
+				561DF6C12913B9E4007EF9B4 /* CardSwap.swift in Sources */,
+				56C51BDB291592B0003435D9 /* KeduSettings.swift in Sources */,
 				561964DF2912673B00D17F91 /* Pie.swift in Sources */,
+				561C003F29151F41003720E5 /* letsBeFriends_2.swift in Sources */,
+				56B43D922915666D0087BAC9 /* ChooseActivityGame.swift in Sources */,
 				561964E82912675700D17F91 /* Array+Identifiable.swift in Sources */,
 				561964DD2912673B00D17F91 /* GridLayout.swift in Sources */,
+				561C004129151F61003720E5 /* letsBeFriends_3.swift in Sources */,
+				561C003829151E32003720E5 /* watchStory.swift in Sources */,
+				56B43D94291566990087BAC9 /* MakeDecisionGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,13 +10,28 @@ import SwiftUI
 struct Game2Screen: View {
     @State private var isShowingDetailView = false
     @State private var fullScreen = false
-    @State var showSheetView = false
-    
+    @State var ShowGameScreen2 = false
+    @State private var isNext = false
     var body: some View {
-        NavigationStack {
+    
             ZStack{
                 
                 Image("Image").resizable().scaledToFill().ignoresSafeArea(.all)
+                
+                HStack{
+                    Button(action: {
+                        isNext.toggle()
+                    }){
+                        Image("back")
+                            .resizable()
+                            .frame(width: 90 , height: 90)
+                            .rotationEffect(.degrees(0))
+                        
+                }
+                   
+                }.frame(width: UIScreen.main.bounds.width * 0.1, height: UIScreen.main.bounds.height * 0.1).offset(CGSize.init(width: -590, height: -390))
+               
+                
                 HStack{
                     VStack{
                         Text("Choose").font(Font.custom("AnnieUseYourTelescope-Regular", size: 70)).foregroundColor(.gray).bold()
@@ -24,13 +39,14 @@ struct Game2Screen: View {
                     }.frame(width: UIScreen.main.bounds.width * 0.3 ,height: UIScreen.main.bounds.height * 0.3)
                     
                     
-                    Rectangle().frame(width: UIScreen.main.bounds.width * 0.5 ,height: UIScreen.main.bounds.height * 0.7 ).cornerRadius(38).foregroundColor(.lightBlue).shadow(radius: 33)
+                    Rectangle().frame(width: UIScreen.main.bounds.width * 0.5 ,height: UIScreen.main.bounds.height * 0.6 ).cornerRadius(38).foregroundColor(.lightBlue).shadow(radius: 33)
                         .padding(.leading, 90).overlay{
                             VStack{
                                 HStack{
                                     VStack{
                                         ZStack{
                                             Button(action: {
+                                                ShowGameScreen2.toggle()
                                                 print("button pressed")
                                             })
                                             {
@@ -53,6 +69,7 @@ struct Game2Screen: View {
                                     VStack{
                                         ZStack{
                                             Button(action: {
+                                                ShowGameScreen2.toggle()
                                                 print("button pressed")
                                             })
                                             {
@@ -77,6 +94,7 @@ struct Game2Screen: View {
                                     VStack{
                                         ZStack{
                                             Button(action: {
+                                                ShowGameScreen2.toggle()
                                                 print("button pressed")
                                             })
                                             {
@@ -98,6 +116,7 @@ struct Game2Screen: View {
                                     VStack{
                                         ZStack{
                                             Button(action: {
+                                                ShowGameScreen2.toggle()
                                                 print("button pressed")
                                             })
                                             {
@@ -122,21 +141,16 @@ struct Game2Screen: View {
                         }
                 }
                 
-            }.navigationBarItems(leading: Button(action: {
-                self.isShowingDetailView.toggle()
-                print("hello")
-            }) {
-                Image("BackBt")
-                    .frame(width: 100 , height: 100)
-                    .shadow(radius : 2 , x : 5 , y :0)
+                if isNext{
+                    
+                    ChooseActivityGame()
+                    
+                }
+                if ShowGameScreen2{
+                    Game2Screen2()
+                }
             }
-            ).navigationBarBackButtonHidden(true)
-                .navigationDestination(isPresented: $isShowingDetailView, destination: {
-                    LogoScreen()
-                })
-            
-        }.navigationViewStyle(.stack)
-        
+      
         
     }
     struct Game2Screen_Previews: PreviewProvider {

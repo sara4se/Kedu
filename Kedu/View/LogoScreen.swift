@@ -12,31 +12,30 @@ struct LogoScreen: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @Environment(\.scenePhase) var scenePhase
     @State private var isActive = false
-    @State private var isShowing = false
+    @State private var isShowing = true
     @State private var  num = 0
+    @State var rotation = 0.0
     var body: some View {
         NavigationStack {
-            
+         
             ZStack{
                 if self.isActive {
-                    Game2Screen2()
+                    RegestrationView()
                 }
                 else {
                     Image("Image").resizable().scaledToFill().ignoresSafeArea(.all)
                     
                     
-                    if isShowing==true{
+                    if isShowing == true{
                         
                         Image("Image1").resizable().scaledToFill()
-                            .ignoresSafeArea(.all)
-                        
-                            .transition(AnyTransition.slide.combined(with:.offset(x : -1000,y: -1000)))
-                        
+                            .ignoresSafeArea(.all).animation(.easeInOut(duration: 5).delay(1))
                         
                         Image("Image2").resizable().scaledToFill()
-                            .ignoresSafeArea(.all)
+                            .ignoresSafeArea(.all)  .animation(.easeInOut(duration: 5).delay(1))
+                             
                         
-                            .transition(AnyTransition.slide.combined(with:.offset(x : -1000,y: -1000)))
+                            .transition(AnyTransition.slide.combined(with:.offset(x : 1000,y: 1000)))
                         
                     }
                     Image("logo").resizable().frame(width: 258,height: 262 )
@@ -49,13 +48,11 @@ struct LogoScreen: View {
             } .navigationBarBackButtonHidden(true)
                 .onAppear {
                     
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.6) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.6) {
                         withAnimation (.easeOut){
                             self.isActive = true
                         }
                     }
-                    
-                    
                 }
             
         }.navigationViewStyle(.stack)

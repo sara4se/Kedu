@@ -11,7 +11,7 @@ import SwiftUI
 struct KeduApp: App {
     var body: some Scene {
         WindowGroup {
-            Game2Screen()
+            LogoScreen()
         }
     }
 }
